@@ -1,0 +1,101 @@
+.card-body {
+	&__wrapper {
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+		color: #434851;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		margin: 0;
+		margin-bottom: 12px;
+		flex: 1 1 auto;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: row;
+		gap: 25px;
+	}
+
+	&__cost-wrapper {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 20px;
+		display: flex;
+		flex-direction: row;
+		gap: 8px;
+		margin: 0;
+		color: #141A25;
+		margin-bottom: 12px;
+	}
+
+	&__current {
+		color: #F20D0D;
+	}
+
+	&__old {
+		text-decoration-line: line-through;
+	}
+
+	&__info {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+		color: #72757C;
+		margin-bottom: 24px;
+	}
+
+	&__count-wrapper,
+	&__height-wrapper,
+	&__width-wrapper {
+		display: flex;
+		flex-direction: row;
+		gap: 8.5px;
+		align-items: center;
+	}
+
+	&__btns {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		color: #141A25;
+	}
+
+	&__btn {
+		&_basket {
+			background: #CFF4E2;
+			border-radius: 12px;
+			padding: 12px 24px;
+		}
+		&_buy {
+			background: #F6F6F6;
+			border-radius: 12px;
+			padding: 12px 20px;
+		}
+		&_basket_enable {
+			&:hover {
+				cursor: pointer;
+				background: #70DDA7;
+			}
+		}
+		&_buy_enable {
+			&:hover {
+				cursor: pointer;
+				background: #929090;
+			}
+		}
+		&_disable {
+			opacity: 0.4;
+			&:hover {
+				cursor: not-allowed;
+			}
+		}
+	}
+}
